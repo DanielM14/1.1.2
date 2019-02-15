@@ -9,10 +9,10 @@ public class Medialab
            int numBooks = 0;
            double aveCost;
            double aveRating;
-           double runTimeHour2, runTimeHour3, runTimeHour4, runTimeHour5;
-           double runTimeMin2, runTimeMin3, runTimeMin4, runTimeMin5;
-           double chapters2, chapters3;
-           double pages2, pages3;
+           double runTimeHour2, runTimeHour3, runTimeHour4, runTimeHour5, runTimeHour6;
+           double runTimeMin2, runTimeMin3, runTimeMin4, runTimeMin5, runTimeHou6;
+           double chapters2, chapters3, chapters4;
+           double pages2, pages3, pages4;
            double lengthSong2, lengthSong3, lengthSong4, lengthSong5, lengthSong6, lengthSong7;
            
            System.out.println("Welcome to your Media Library");
@@ -123,7 +123,7 @@ public class Medialab
            book1.setPrice(3.50);
            System.out.println("Book Price " + book1.getPrice());
            
-           Books book2 = new Books("The hobbit", 5.00, 10);
+           Books book2 = new Books("The hobbit", 3.00, 10);
            numMovies = numSongs + 1;
            totalCost = totalCost + movie5.getPrice();
            totalRating = totalRating + movie5.getRating();
@@ -131,14 +131,21 @@ public class Medialab
            pages2 = 310;
            System.out.println("The book The Hobbit has " + chapters2 + " and " + pages2 + " pages!");
            
-           Books book3 = new Books("Lord of the Rings", 5.00, 10);
+           Books book3 = new Books("The Lost Girls of Paris", 5.00, 8);
            numMovies = numSongs + 1;
            totalCost = totalCost + movie5.getPrice();
            totalRating = totalRating + movie5.getRating();
-           chapters3 = 12;
-           pages3 = 304;
-           System.out.println("The book The Lord of the rings has " + chapters3 + " and " + pages3 + " pages!");
+           chapters3 = 20;
+           pages3 = 384;
+           System.out.println("The book The lost girls of Paris has " + chapters3 + " and " + pages3 + " pages!");
            
+           Books book4 = new Books("The Tattooist of Auschwitz", 7.00, 5);
+           numMovies = numSongs + 1;
+           totalCost = totalCost + movie5.getPrice();
+           totalRating = totalRating + movie5.getRating();
+           chapters4 = 23;
+           pages4 = 288;
+           System.out.println("The book The Tattooist of Auzhwitz has " + chapters4 + " and " + pages4 + " pages!");
            
            
     }
